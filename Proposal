@@ -1,1 +1,24 @@
-# Proposal
+Proposal
+
+We will make software that allows users to quickly find available time slots for their desired gym equipment and make reservations, which are handled with a database.
+
+DATA:
+
+Type of Station (Bench, Cardio Pod, etc.)
+  - # of each type of stations
+
+Time slots for each individual station (and date)
+
+"isTaken" boolean for each station/time
+
+Name for each reservation
+
+Counter for total gym users at each time slot
+
+Track reservations per user over a day
+
+Special equipment (bands, mats, kettle bells, etc)
+
+INTERFACE:
+
+todo
