@@ -4,8 +4,7 @@ We will make software that allows users to quickly find available time slots for
 
 DATA:
 
-Type of Station (Bench, Cardio Pod, etc.)
-  - # of each type of stations
+Type of Station (Bench, Cardio Pod, etc.), # of each type of stations
 
 Time slots for each individual station (and date)
 
@@ -21,4 +20,3 @@ Special equipment (bands, mats, kettle bells, etc)
 
 INTERFACE:
 
-todo
