@@ -34,6 +34,7 @@ var GymEquipment = new mongoose.Schema({
 			type: Boolean,
 			required: 'true if reserved'
 		}
-	});
+	}
+});
 
 module.exports = mongoose.model('Gym Equipment', GymEquipmentSchema);
