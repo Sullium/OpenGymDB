@@ -2,37 +2,37 @@
 
 var mongoose = require('mongoose');
 
-var GymEquipment = new mongoose.Schema({
-  slot{
-		Created_date{
-			type: date,
+var GymEquipmentSchema = new mongoose.Schema({
+  slot: {
+		Created_date: {
+			type: Date,
 			default: Date.now
 		},
-		date{
+		date: {
 			type: String,
-			required: 'Date of the Slot'
+			required: true //'Date of the Slot'
 		},
-		time{
+		time: {
 			type: String,
-			required: 'Start-End'
+			required: true //'Start-End'
 		},
-		station{
-			name{
+		station: {
+			name: {
 				type: String,
-				required: 'Machine/Equipment Name'
+				required: true //'Machine/Equipment Name'
 			},
-			stationType{
+			stationType: {
 				type: String,
-				required: 'Type of Macine/Equipment'
+				required: true //'Type of Macine/Equipment'
 			}
 		},
-		reserverName{
+		reserverName: {
 			type: String,
-			required: 'Name of reserever'
+			required: true //'Name of reserever'
 		},
-		isTaken{
+		isTaken: {
 			type: Boolean,
-			required: 'true if reserved'
+			required: true //'true if reserved'
 		}
 	}
 });
