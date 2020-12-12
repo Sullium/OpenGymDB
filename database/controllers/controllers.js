@@ -1,3 +1,4 @@
+  
 'use strict';
 
 var mongoose = require('mongoose');
@@ -33,7 +34,7 @@ exports.delete_gym_equipment = function(req, res) {
   }, function(err, gym_equipment) {
     if (err)
       res.send(err);
-    res.json({ message: 'Food bank successfully deleted' });
+    res.json({ message: 'Gym equipment successfully deleted' });
   });
 };
 
