@@ -19,11 +19,11 @@ var GymEquipment = new mongoose.Schema({
 		station{
 			name{
 				type: String,
-				required: 'Equipment Name'
+				required: 'Machine/Equipment Name'
 			},
 			stationType{
 				type: String,
-				required: 'Type of equipment?'
+				required: 'Type of Macine/Equipment'
 			}
 		},
 		reserverName{
