@@ -12,7 +12,7 @@ Item = require('./model/model.js');
 bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise; // for asynchronous callbacks
-mongoose.connect('mongodb+srv://User_Name:*****@cluster0.8mumj.mongodb.net/GymEquipmentDB?retryWrites=true&w=majority'); // set up at mongodb.
+mongoose.connect('mongodb+srv://Drf4:thing@cluster0.8mumj.mongodb.net/GymEquipmentDB?retryWrites=true&w=majority'); // set up at mongodb.
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
