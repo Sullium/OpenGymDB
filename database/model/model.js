@@ -1,7 +1,7 @@
 'use strict'; // all variables must be declared
 
 var mongoose = require('mongoose');
-
+/*
 var GymEquipmentSchema = new mongoose.Schema({
   slot: {
 		Created_date: {
@@ -34,6 +34,42 @@ var GymEquipmentSchema = new mongoose.Schema({
 			type: Boolean,
 			required: true //'true if reserved'
 		}
+	}
+});
+*/
+
+var GymEquipmentSchema = new mongoose.Schema({
+	station: {
+		name: {
+			type: String,
+			required: true
+		},
+		stationType:{
+			type: String,
+			required: true
+		}
+	},
+	slot: {
+		date: {
+			type: String,
+			required: true
+		},
+		time: {
+			type: String,
+			required: true
+		},
+		reserverName: {
+			type: String,
+			required: true
+		},
+		isTaken: {
+			type: Boolean,
+			required: true
+		}
+	},
+	Created_date: {
+		type: Date,
+		default: Date.now
 	}
 });
 
