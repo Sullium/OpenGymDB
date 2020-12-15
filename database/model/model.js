@@ -49,7 +49,7 @@ var GymEquipmentSchema = new mongoose.Schema({
 			required: true
 		}
 	},
-	slot: {
+	slot: [
 		date: {
 			type: String,
 			required: true
@@ -66,7 +66,7 @@ var GymEquipmentSchema = new mongoose.Schema({
 			type: Boolean,
 			required: true
 		}
-	},
+	],
 	Created_date: {
 		type: Date,
 		default: Date.now
