@@ -50,6 +50,7 @@ var GymEquipmentSchema = new mongoose.Schema({
 		}
 	},
 	slot: [
+		{
 		date: {
 			type: String,
 			required: true
@@ -65,6 +66,7 @@ var GymEquipmentSchema = new mongoose.Schema({
 		isTaken: {
 			type: Boolean,
 			required: true
+		}
 		}
 	],
 	Created_date: {
